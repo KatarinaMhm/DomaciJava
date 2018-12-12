@@ -30,6 +30,7 @@ public class UporediNizove {
 			for (int j = 0; j < brojClanova; j++) {
 				if (nizB[i] == nizA[j]) {
 					brojac++;
+					break;
 				}
 			}
 		}
