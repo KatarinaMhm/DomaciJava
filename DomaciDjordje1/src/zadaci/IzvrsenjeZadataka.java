@@ -13,6 +13,7 @@ public class IzvrsenjeZadataka {
 		System.out.println("     2 - Broj ploca na stazi");
 		System.out.println("     3 - Okreni niz");
 		System.out.println("     4 - Uporedi niz b sa nizom a");
+		System.out.println("     5 - Prosti brojevi iz niza");
 		
 		int izbor = input.nextInt();
 
@@ -25,6 +26,8 @@ public class IzvrsenjeZadataka {
 			OkreniNiz.OkreniNiz();
 		case 4:
 			UporediNizove.UporediBA();
+		case 5:
+			NizProstihBrojeva.nizProstihBrojeva();
 		}
 	}
 
