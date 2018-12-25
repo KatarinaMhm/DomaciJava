@@ -7,8 +7,6 @@ public class NizProstihBrojeva {
 //	Napraviti funkciju koja za zadati ceo broj ispituje da li je prost ili ne. U glavnom delu programa (MAIN) ucitati niz celih brojeva, pa potom od njega kreirajte novi niz od elemenata koji su prosti.
 //	   Ispisati novodobijeni niz.
 
-	
-
 	public static Boolean prostBroj(int n) {
 
 		boolean prostBroj = false;
@@ -46,22 +44,19 @@ public class NizProstihBrojeva {
 		}
 
 		int nizProstihBrojeva[] = new int[nizBr];
+		int k = 0;
 
 		for (int i = 0; i < nizBr; i++) {
-			int j = 0;
-			for (; j < nizBr; j++) {
-				if(prostBroj(nizBrojeva[j]) == true) {
-					nizProstihBrojeva[i] = nizBrojeva[j];
-				} else {
-					break;
-				}
+			if (prostBroj(nizBrojeva[i]) == true) {
+				nizProstihBrojeva[k++] = nizBrojeva[i];
+				System.out.println("prost broj je " + nizBrojeva[i]);
 			}
 		}
-		
+
 		for (int i = 0; i < nizBr; i++) {
-			System.out.println(nizProstihBrojeva[i] + " ");
+			System.out.print(nizProstihBrojeva[i] + " ");
 		}
-		
+
 	}
 
 }

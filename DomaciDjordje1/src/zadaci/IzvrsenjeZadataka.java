@@ -14,6 +14,7 @@ public class IzvrsenjeZadataka {
 		System.out.println("     3 - Okreni niz");
 		System.out.println("     4 - Uporedi niz b sa nizom a");
 		System.out.println("     5 - Prosti brojevi iz niza");
+		System.out.println("     6 - Proizvodi i rate");
 		
 		int izbor = input.nextInt();
 
@@ -28,6 +29,8 @@ public class IzvrsenjeZadataka {
 			UporediNizove.UporediBA();
 		case 5:
 			NizProstihBrojeva.nizProstihBrojeva();
+		case 6:
+			BrojRata.Rate();
 		}
 	}
 
